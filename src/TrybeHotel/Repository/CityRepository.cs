@@ -23,7 +23,13 @@ namespace TrybeHotel.Repository
         // 3. Desenvolva o endpoint POST /city
         public CityDto AddCity(City city)
         {
-            throw new NotImplementedException();
+            _context.Cities.Add(city);
+            _context.SaveChanges();
+            var cityAdded = from reqCity in _context.Cities
+                                where reqCity.CityId == city.CityId
+                                select new CityDto() { cityId = reqCity.CityId ,name = city.Name };
+            
+            return cityAdded.First();
         }
 
     }
