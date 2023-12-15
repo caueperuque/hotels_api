@@ -21,28 +21,31 @@ Este é um sistema incrível para gerenciar reservas de hotéis de várias redes
 Para utilizar esta aplicação, siga estes passos:
 
 1. **Clone o repositório HotelsAPI**.
-2. **Inicie o serviço do banco de dados** utilizando o Docker Compose:
+   ```
+    git clone git@github.com:caueperuque/hotels_api.git
+    ```
+3. **Inicie o serviço do banco de dados** utilizando o Docker Compose:
     ```
     docker-compose up -d --build
     ```
-3. **Conecte-se ao banco de dados** com as seguintes credenciais:
+4. **Conecte-se ao banco de dados** com as seguintes credenciais:
     - Server: localhost
     - User: sa
     - Password: SenhaSuperSecreta12!
     - Database: HotelsDB
     - Trust server certificate: true
 
-4. **Verifique a connectionString** e ajuste se necessário:
+5. **Verifique a connectionString** e ajuste se necessário:
     ```
     var connectionString = "Server=localhost;Database=HotelsDBl;User=SA;Password=SenhaSuperSecreta12!;TrustServerCertificate=True";
     ```
 
-5. **Atualize o banco de dados** com o comando:
+6. **Atualize o banco de dados** com o comando:
     ```
     dotnet ef database update
     ```
 
-6. **Execute o projeto localmente e divirta-se explorando as funcionalidades!** 🎉
+7. **Execute o projeto localmente e divirta-se explorando as funcionalidades!** 🎉
 
 
 ## Funcionalidades
