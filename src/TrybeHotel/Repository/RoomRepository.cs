@@ -12,7 +12,6 @@ namespace TrybeHotel.Repository
             _context = context;
         }
 
-        // 6. Desenvolva o endpoint GET /room/:hotelId
         public IEnumerable<RoomDto> GetRooms(int HotelId)
         {
             var rooms = from room in _context.Rooms
@@ -36,47 +35,60 @@ namespace TrybeHotel.Repository
             return rooms.ToList();
         }
 
-        // 7. Desenvolva o endpoint POST /room
         public RoomDto AddRoom(Room room)
         {
-            _context.Rooms.Add(room);
-            _context.SaveChanges();
-
-            var addedRoom = _context.Rooms
-                .Include(r => r.Hotel)
-                .ThenInclude(h => h.City)
-                .FirstOrDefault(r => r.RoomId == room.RoomId);
-
-            if (addedRoom == null)
+            try
             {
-                throw new Exception("Falha ao adicionar o quarto.");
-            }
+                _context.Rooms.Add(room);
+                _context.SaveChanges();
 
-            var roomDto = new RoomDto
-            {
-                roomId = addedRoom.RoomId,
-                name = addedRoom.Name,
-                capacity = addedRoom.Capacity,
-                image = addedRoom.Image,
-                hotel = new HotelDto
+                var addedRoom = _context.Rooms
+                    .Include(r => r.Hotel)
+                    .ThenInclude(h => h.City)
+                    .FirstOrDefault(r => r.RoomId == room.RoomId);
+
+                if (addedRoom == null)
                 {
-                    hotelId = addedRoom.Hotel.HotelId,
-                    name = addedRoom.Hotel.Name,
-                    address = addedRoom.Hotel.Address,
-                    cityId = addedRoom.Hotel.CityId,
-                    cityName = addedRoom.Hotel.City.Name
+                    throw new Exception("Falha ao adicionar o quarto.");
                 }
-            };
 
-            return roomDto;
+                var roomDto = new RoomDto
+                {
+                    roomId = addedRoom.RoomId,
+                    name = addedRoom.Name,
+                    capacity = addedRoom.Capacity,
+                    image = addedRoom.Image,
+                    hotel = new HotelDto
+                    {
+                        hotelId = addedRoom.Hotel.HotelId,
+                        name = addedRoom.Hotel.Name,
+                        address = addedRoom.Hotel.Address,
+                        cityId = addedRoom.Hotel.CityId,
+                        cityName = addedRoom.Hotel.City.Name
+                    }
+                };
+
+                return roomDto;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new RoomDto();
+            }
         }
 
-        // 8. Desenvolva o endpoint DELETE /room/:roomId
         public void DeleteRoom(int RoomId)
         {
-            var roomDeleted = _context.Rooms.FirstOrDefault(r => r.RoomId == RoomId);
-            _context.Rooms.Remove(roomDeleted);
-            _context.SaveChanges();
+            try
+            {
+                var roomDeleted = _context.Rooms.FirstOrDefault(r => r.RoomId == RoomId);
+                _context.Rooms.Remove(roomDeleted);
+                _context.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

@@ -14,10 +14,14 @@ namespace TrybeHotel.Controllers
             _repository = repository;
         }
 
-        // 6. Desenvolva o endpoint GET /room/:hotelId
         [HttpGet("{HotelId}")]
         public IActionResult GetRoom(int HotelId){
             var rooms = _repository.GetRooms(HotelId);
+
+            if (rooms.Count() <= 0)
+            {
+                return NotFound("Nenhum quarto foi encontrado.");
+            }
 
             return Ok(rooms);
         }
@@ -27,10 +31,9 @@ namespace TrybeHotel.Controllers
         public IActionResult PostRoom([FromBody] Room room){
             var result = _repository.AddRoom(room);
 
-            return Created("Room added", result);
+            return Created("Quarto adicionado.", result);
         }
 
-        // 8. Desenvolva o endpoint DELETE /room/:roomId
         [HttpDelete("{RoomId}")]
         public IActionResult Delete(int RoomId)
         {

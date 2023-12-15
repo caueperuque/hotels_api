@@ -1,0 +1,735 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.0.0.0",
+        "fileVersion": "4.0.1-1.22181.2 (487283bc)",
+        "semanticVersion": "4.0.0",
+        "language": ""
+      },
+      "results": [
+        {
+          "ruleId": "CS8032",
+          "level": "warning",
+          "message": "An instance of analyzer Microsoft.EntityFrameworkCore.InternalUsageDiagnosticAnalyzer cannot be created from /home/caue/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.4/analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. The system cannot find the file specified..",
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8032",
+          "level": "warning",
+          "message": "An instance of analyzer Microsoft.EntityFrameworkCore.UninitializedDbSetDiagnosticSuppressor cannot be created from /home/caue/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.4/analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll : Could not load file or assembly 'Microsoft.CodeAnalysis, Version=4.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'. The system cannot find the file specified..",
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Dto/CityDto.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 23,
+                  "endLine": 4,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Dto/RoomDto.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 25,
+                  "endLine": 4,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'image' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Dto/RoomDto.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 25,
+                  "endLine": 6,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Dto/HotelDto.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 23,
+                  "endLine": 4,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'address' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Dto/HotelDto.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Models/Room.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Image' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Models/Room.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Models/Hotel.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Address' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Models/Hotel.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Models/City.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Cities' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 12,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Hotels' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 12,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Rooms' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 12,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Cities' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 12,
+                  "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Hotels' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 12,
+                  "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Rooms' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 12,
+                  "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 40,
+                  "endLine": 29,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 44,
+                  "endLine": 32,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 60,
+                  "endLine": 24,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 44,
+                  "endLine": 42,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 35,
+                  "endLine": 47,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 31,
+                  "endLine": 63,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 32,
+                  "endLine": 67,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'entity' in 'EntityEntry<Room> DbSet<Room>.Remove(Room entity)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 35,
+                  "endLine": 78,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Declare types in namespaces",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Program.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 22,
+                  "endLine": 48,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Program.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 4
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1827",
+          "level": "note",
+          "message": "Count() is used where Any() could be used instead to improve performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Controllers/RoomController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 17,
+                  "endLine": 21,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "OperationKey": "OperationBinaryLeft",
+              "ShouldNegateKey": ""
+            }
+          }
+        },
+        {
+          "ruleId": "CA1827",
+          "level": "note",
+          "message": "Count() is used where Any() could be used instead to improve performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Controllers/CityController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 17,
+                  "endLine": 21,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "OperationKey": "OperationBinaryLeft",
+              "ShouldNegateKey": ""
+            }
+          }
+        },
+        {
+          "ruleId": "CA1827",
+          "level": "note",
+          "message": "Count() is used where Any() could be used instead to improve performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/caue/estudos/projetos-pessoais/hotels_api/src/TrybeHotel/Controllers/HotelController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 17,
+                  "endLine": 22,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "OperationKey": "OperationBinaryLeft",
+              "ShouldNegateKey": ""
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1050": {
+          "id": "CA1050",
+          "shortDescription": "Declare types in namespaces",
+          "fullDescription": "Types are declared in namespaces to prevent name collisions and as a way to organize related types in an object hierarchy.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1050",
+          "properties": {
+            "category": "Design",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1827": {
+          "id": "CA1827",
+          "shortDescription": "Do not use Count() or LongCount() when Any() can be used",
+          "fullDescription": "For non-empty collections, Count() and LongCount() enumerate the entire sequence, while Any() stops at the first item or the first item that satisfies a condition.",
+          "defaultLevel": "note",
+          "helpUri": "https://docs.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1827",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8032": {
+          "id": "CS8032",
+          "shortDescription": "An analyzer instance cannot be created",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8032)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8604": {
+          "id": "CS8604",
+          "shortDescription": "Possible null reference argument.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

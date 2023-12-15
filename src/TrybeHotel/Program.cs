@@ -1,9 +1,5 @@
-using System.Text;
 using TrybeHotel.Repository;
 using System.Text.Json.Serialization;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using TrybeHotel.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

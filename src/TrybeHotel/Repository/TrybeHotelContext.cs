@@ -13,7 +13,7 @@ public class TrybeHotelContext : DbContext, ITrybeHotelContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Server=localhost;Database=TrybeHotel;User=SA;Password=TrybeHotel12!;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer(@"Server=localhost;Database=HotelsDB;User=SA;Password=SenhaSuperSecreta12!;TrustServerCertificate=True");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
